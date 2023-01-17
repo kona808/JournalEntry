@@ -15,6 +15,9 @@
 		413AA81527273B77008D6631 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413AA81427273B77008D6631 /* DateHelper.swift */; };
 		FFD6DDA32977201A00FC6A9A /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD6DDA22977201A00FC6A9A /* Entry.swift */; };
 		FFD6DDA5297721D400FC6A9A /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD6DDA4297721D400FC6A9A /* EntryController.swift */; };
+		FFD6DDA929772ACC00FC6A9A /* EntryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD6DDA829772ACC00FC6A9A /* EntryListTableViewController.swift */; };
+		FFD6DDAB29772AE500FC6A9A /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD6DDAA29772AE500FC6A9A /* EntryDetailViewController.swift */; };
+		FFD6DDAE29772C1300FC6A9A /* EntryListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD6DDAD29772C1300FC6A9A /* EntryListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		413AA81427273B77008D6631 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		FFD6DDA22977201A00FC6A9A /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		FFD6DDA4297721D400FC6A9A /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
+		FFD6DDA829772ACC00FC6A9A /* EntryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListTableViewController.swift; sourceTree = "<group>"; };
+		FFD6DDAA29772AE500FC6A9A /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
+		FFD6DDAD29772C1300FC6A9A /* EntryListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,8 +131,19 @@
 		FFD6DDA729772A3700FC6A9A /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FFD6DDA829772ACC00FC6A9A /* EntryListTableViewController.swift */,
+				FFD6DDAA29772AE500FC6A9A /* EntryDetailViewController.swift */,
+				FFD6DDAC29772BF000FC6A9A /* Custom Cell */,
 			);
 			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		FFD6DDAC29772BF000FC6A9A /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FFD6DDAD29772C1300FC6A9A /* EntryListTableViewCell.swift */,
+			);
+			path = "Custom Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,10 +217,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFD6DDAE29772C1300FC6A9A /* EntryListTableViewCell.swift in Sources */,
 				FFD6DDA32977201A00FC6A9A /* Entry.swift in Sources */,
 				413AA7F12724B792008D6631 /* AppDelegate.swift in Sources */,
+				FFD6DDA929772ACC00FC6A9A /* EntryListTableViewController.swift in Sources */,
 				FFD6DDA5297721D400FC6A9A /* EntryController.swift in Sources */,
 				413AA7F32724B792008D6631 /* SceneDelegate.swift in Sources */,
+				FFD6DDAB29772AE500FC6A9A /* EntryDetailViewController.swift in Sources */,
 				413AA81527273B77008D6631 /* DateHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
