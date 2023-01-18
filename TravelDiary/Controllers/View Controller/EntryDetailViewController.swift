@@ -30,23 +30,22 @@ class EntryDetailViewController: UIViewController {
     @IBAction func saveButton(_ sender: Any) {
         // What data do I want to save?
         // How to guarentee there is data and not nil?
-       guard let title = titleTextField.text,
-        let address = addressTextField.text,
-        let date = dateLabel.text,
-                let body = textView.text else { return }
+        guard let title = titleTextField.text,
+              let address = addressTextField.text,
+              let body = textView.text else { return }
         // if there is data, update and save the data
-                if let entry = entryReciever {
-                    EntryController.shared.updateEntry(entryToUpdate: entryReciever, newTitle: title, newBody: body, newAddress: address)
-                } else {
-                EntryController.shared.createEntry(with: title, address: address, body: body)
-                // if there is no data, create a new saved entry
-        
+        if let entry = entryReciever {
+            EntryController.shared.updateEntry(entryToUpdate: entry, newTitle: title, newBody: body, newAddress: address)
+        } else {
+            EntryController.shared.createEntry(with: title, address: address, body: body)
+            // if there is no data, create a new saved entry
         }
+        navigationController?.popViewController(animated: true)
     }
     
     func updateUI() {
         textView.text = entryReciever?.body
-        dateLabel.text = "\(entryReciever?.entryDate)"
+        dateLabel.text = entryReciever?.entryDate.stringValue()
         addressTextField.text = entryReciever?.address
         titleTextField.text = entryReciever?.title
         

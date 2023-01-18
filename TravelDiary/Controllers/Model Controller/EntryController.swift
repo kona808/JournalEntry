@@ -9,7 +9,7 @@ import Foundation
 
 class EntryController {
     
-    let shared = EntryController()
+    static let shared = EntryController()
     
     var entries: [Entry] = []
     

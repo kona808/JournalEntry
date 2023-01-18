@@ -17,6 +17,6 @@ class EntryListTableViewCell: UITableViewCell {
     func configureCell(with entry: Entry) {
         titleLabel.text = entry.title
         addressLabel.text = entry.address
-        dateLabel.text = "\(entry.entryDate)"
+        dateLabel.text = entry.entryDate.stringValue()
     }
 }
